@@ -17,18 +17,31 @@
 					codigo: 123,
   					salario: "500 $"
   				};
+    
+    var  AreaTrab= {
+	  	puestodetrab: "Redes",
+	  	idarea: 1234,
+	    entrada: "7:00 am",
+	    salida: "6:00 pm"
+	};
+    
+    
 			
 				var Empresa=[];
 
 				for(var i=0 ; i<5 ;i++){
 					if(i==0){
-					  Empresa[i]= "nombre: " + Datostrabajador.nombre + "Codigo_deTrab: " + Datostrabajador.codigo + "Tiene un salario De: " + Datostrabajador.salario;
+					  Empresa[i]= " Nombre: " + Datostrabajador.nombre + " Codigo_deTrab: " + Datostrabajador.codigo + " Tiene un salario De: " + Datostrabajador.salario;
+                       } 
+                         else  if(i==1){
+ 						Empresa[i]="Area de trabajo: " + AreaTrab.puestodetrab + " id_trabajo: " + AreaTrab.idarea + " Entrada: " + AreaTrab.entrada + " Salida: " + AreaTrab.salida;
+ 						}
                         
-					 }
+					 
 
                     };
 
-				for(var i=0 ; i<1 ; i++){
+				for(var i=0 ; i<2 ; i++){
  					alert(Empresa[i] )
 				};
 	</script>
