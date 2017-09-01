@@ -32,6 +32,12 @@
 	  	correo : "solbyte.org"
 	  };
 
+    var Datosservicio=
+	  	{
+	  		Descripcion:  "Ofrecer un Servicio a domicilio",
+	  		CostoDeServicio: "150 $",
+	  		garantia: "1 mes"
+         };
     
 			
 				var Empresa=[];
@@ -46,6 +52,10 @@
                     else if(i==2){
  							Empresa[i]=DatosEmpres.nombreEmp + " Direccion: " + DatosEmpres.direccion + " Telefono: " + DatosEmpres.telefono + " Correo " + DatosEmpres.correo;
  						}
+                    else if(i==3){
+ 							Empresa[i]= "descripcion: " + Datosservicio.Descripcion + "Costo_servicio: " + Datosservicio.CostoDeServicio + "Garantia del servico: " + Datosservicio.garantia;
+ 						}
+
                     
                         
                     };
