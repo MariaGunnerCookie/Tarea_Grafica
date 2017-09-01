@@ -39,6 +39,15 @@
 	  		garantia: "1 mes"
          };
     
+     var DatosCliente= 
+	  		{
+	  			nombre_cliente: " Persona x",
+	  			direccion: "Bolonia 1/C arriba",
+	  			forma_pago: " Targeta de Credito",
+	  			total: "152 $ "
+
+	  		};
+    
 			
 				var Empresa=[];
 
@@ -55,12 +64,16 @@
                     else if(i==3){
  							Empresa[i]= "descripcion: " + Datosservicio.Descripcion + "Costo_servicio: " + Datosservicio.CostoDeServicio + "Garantia del servico: " + Datosservicio.garantia;
  						}
+                    else if(i==4){
+ 							Empresa[i]= "nombre del cliente: " + DatosCliente.nombre_cliente + "Dirreccion: " + DatosCliente.direccion + "forma de pago: " + DatosCliente.forma_pago + "Total de pago: " + DatosCliente.total;
+ 							
+ 						}
 
                     
                         
                     };
 
-				for(var i=0 ; i<3; i++){
+				for(var i=0 ; i<5; i++){
  					alert(Empresa[i] )
 				};
 	</script>
