@@ -25,6 +25,13 @@
 	    salida: "6:00 pm"
 	};
     
+    var     DatosEmpres= {
+	  	nombreEmp: "Solbyte",
+	  	direccion: "Carretera Masaya",
+	  	telefono: "22897287" ,
+	  	correo : "solbyte.org"
+	  };
+
     
 			
 				var Empresa=[];
@@ -36,12 +43,14 @@
                          else  if(i==1){
  						Empresa[i]="Area de trabajo: " + AreaTrab.puestodetrab + " id_trabajo: " + AreaTrab.idarea + " Entrada: " + AreaTrab.entrada + " Salida: " + AreaTrab.salida;
  						}
+                    else if(i==2){
+ 							Empresa[i]=DatosEmpres.nombreEmp + " Direccion: " + DatosEmpres.direccion + " Telefono: " + DatosEmpres.telefono + " Correo " + DatosEmpres.correo;
+ 						}
+                    
                         
-					 
-
                     };
 
-				for(var i=0 ; i<2 ; i++){
+				for(var i=0 ; i<3; i++){
  					alert(Empresa[i] )
 				};
 	</script>
